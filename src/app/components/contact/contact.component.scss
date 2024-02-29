@@ -1,0 +1,45 @@
+.maps{
+    height: 400px;
+    width: 80%;
+}
+.width-360{
+    width: 360px !important;
+}
+.margin-top{
+    margin-top: 30px;
+}
+.btn{
+    background-color: #766dff;
+    width: 150px;
+    height: 30px;
+    color: aliceblue !important;
+}
+.messageBox{
+    height: 175px;
+    width: 390px;
+    border: none !important;
+}
+button:hover{
+    background-color: aliceblue;
+    color: #766dff !important;
+    border: gray 1px solid;
+}
+textarea{
+    height: 175px !important;
+    border: none !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    height: 175px !important;
+    overflow-y: auto;
+    border-bottom-width: 0px !important;
+}
+.margin-bottom{
+    margin-bottom: 60px;
+}
+mat-icon{
+    color: #766dff;
+}
+.margin-bottom-50{
+    margin-bottom: 50px;
+}

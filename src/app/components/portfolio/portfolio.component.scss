@@ -1,0 +1,38 @@
+.margin-top{
+    margin-top: 80px;
+}
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+.img-width{
+    width: 160PX !important;
+}
+mat-card{
+    img{
+        width: 160px !important;
+    }
+}
+mat-card{
+    mat-card-title{
+        color: #3f51b5;
+    }
+}
+mat-card:hover{
+    border: 3px solid gray;
+}
+.margin-bottom{
+    margin-bottom: 100px;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    background-color: #3f51b5;
+    color: aliceblue !important;
+}
+.btn:hover{
+    width: 60px;
+    height: 30px;
+    background-color: gray;
+    border: 2px solid white;
+}

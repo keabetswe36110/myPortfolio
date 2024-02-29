@@ -1,0 +1,113 @@
+.main-container{
+    height: 100vh;
+    width: 100%;
+    
+}
+.top{
+    height: 80%;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+.bottom{
+    height: 20%;
+    background-color: #fff;
+}
+.inner{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    left: 10%;
+    top: 23%;
+    border-radius: 12px;
+}
+.image{
+    background-image: url('../../../assets/WhatsApp\ Image\ 2023-11-15\ at\ 09.32.56_bea95273.jpg');
+    background-size: cover;
+    border-radius: 12px;
+}
+.width-48{
+    width: 46%;
+    height: 90%;
+}
+.content{
+    h1,h4{
+        margin: 0;
+    }
+}
+mat-icon{
+    color: #766dff;
+}
+.font-color{
+    color: #777777;
+}
+p{
+    color: #777777;
+}
+.height-30{
+    height: 20px;
+}
+// =====================animations============================
+@keyframes slide-left{
+    from {
+        transform: translateX(1000px);
+        color: red
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+.animate{
+    animation: slide-left 1.5s ease-in ;
+}
+@keyframes slide-right{
+    from {
+        transform: translateX(-1000px);
+        color: rgb(0, 17, 255)
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+.animated{
+    animation: slide-right 1.5s ease-in ;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0);
+        color: rgb(0, 17, 255)
+    }
+    to{
+        transform: rotate(180deg);
+    }
+    
+}
+.rotate{
+    animation: rotate 1s linear 0s 1.95;
+}
+
+.height-50{
+    height: 150px;
+}
+marquee{
+    height: 300px;
+}
+.cube{
+    max-width: 200px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.text-color-light{
+    color: #69ebfa ;
+}
+.text-color-dark{
+    color: #766dff;
+}

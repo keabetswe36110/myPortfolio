@@ -1,0 +1,104 @@
+<app-toolbar></app-toolbar>
+<div class="full-width flex center-center margin-top">
+    <div class="width-80 margin-bottom">
+        <div class="example-input-wrapper">
+            <mat-vertical-stepper [linear]="false" #stepper animationDuration="1000">
+                <mat-step>
+                    <ng-template matStepLabel>Grade 12</ng-template>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title>
+                                <h1 class="gradient-text">MAHLOGEDI SECONDARY SCHOOL </h1>
+                            </mat-card-title>
+                            <mat-card-subtitle><div class="flex baseline"><div><img class="height-20" src="../../../assets/play/placeholder_684908.png" alt=""></div><div>Limpopo, Polokwane , Ga-Maja</div></div></mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><b>SUBJECTS:</b> Sepedi HL, English FAL, Maths ,Physical Science ,Agricultural Science
+                                ,Life
+                                sciences and Life Orientation</p>
+                            <p>Year completed : 2014</p>
+                        </mat-card-content>
+                    </mat-card>
+                    <div>
+                        <button mat-button (click)="stepper.next()">next</button>
+                    </div>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>College</ng-template>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title>
+                                <h1 class="gradient-text">SOUTH WEST GAUTENG COLLEGE</h1>
+                            </mat-card-title>
+                            <mat-card-subtitle><div class="flex baseline"><div><img class="height-20" src="../../../assets/play/placeholder_684908.png" alt=""></div><div>Gauteng, johannesburg , molapo : soweto-campus</div></div></mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p><b>Course:</b>Civil Engineering N6</p>
+                            <p><b>major subjects : </b>Maths , Building and structural surveying , Building and
+                                structural construction and Building Science</p>
+                            <p><b>Duratin :</b> 2 Years</p>
+                            <p><b>Year completed : </b>2016</p>
+                        </mat-card-content>
+                    </mat-card>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.next()">next</button>
+                    </div>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>UNIVERSITY</ng-template>
+                    <div>
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title>
+                                    <h1 class="gradient-text">UNIVERSITY OF JOHANNESBURG</h1>
+                                </mat-card-title>
+                                <mat-card-subtitle><div class="flex baseline"><div><img class="height-20" src="../../../assets/play/placeholder_684908.png" alt=""></div><div>Gauteng, johannesburg , AucklandPark :
+                                    buntin-campus</div></div></mat-card-subtitle>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p><b>Course:</b>Bcom information systems</p>
+                                <p><b>major subjects :</b>Software development, information systems , Business
+                                    Management and Entrepreneurship</p>
+                                <p><b>Duratin :</b>3 Years</p>
+                                <p><b>Year completed :</b>2021</p>
+                            </mat-card-content>
+                        </mat-card>
+
+                    </div>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.next()">next</button>
+                    </div>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Training</ng-template>
+                    <div>
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                                <mat-card-title>
+                                    <h1 class="gradient-text">AFRIKA TIKKUN SERVICES</h1>
+                                </mat-card-title>
+                                <mat-card-subtitle><div class="flex baseline"><div><img class="height-20" src="../../../assets/play/placeholder_684908.png" alt=""></div><div>Gauteng, johannesburg , Randburg-campus</div></div></mat-card-subtitle>   
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p><b>Course:</b>Full stack programme(MEAN stack)</p>
+                                <p><b>major subjects :</b>HTML , CSS , javascript , Angular , Node.js , express and
+                                    MongoDB</p>
+                                <p><b>Duratin :</b>5 Months</p>
+                                <p><b>Year completed :</b>2024</p>
+                            </mat-card-content>
+                        </mat-card>
+
+                    </div>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.reset()">Reset</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

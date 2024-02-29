@@ -1,0 +1,47 @@
+<app-toolbar></app-toolbar>
+<div class="flex center-center column">
+    <div class="maps margin-top" id="map">
+    </div>
+    <div class="flex spacebetween-center gap-2em margin-top margin-bottom">
+        <div class="left flex center-start column margin-bottom-50">
+            <div class="flex center-center gap-1em"><mat-icon>phone</mat-icon>
+                <p>069 364 3640</p>
+            </div>
+            <div class="flex center-center gap-1em"><mat-icon>mail</mat-icon>
+                <p>keabetswe36110@gmail.com</p>
+            </div>
+            <div class="flex center-center gap-1em"><mat-icon>home</mat-icon>
+                <p>4 senegal cosmo city ext 6 2188 </p>
+            </div>
+        </div>
+        <div class="center">
+            <form class="example-form  flex column" #messageForm="ngForm">
+                <mat-form-field class="width-360 margin-top">
+                    <mat-label>Full Name</mat-label>
+                    <input type="text" matInput name="name" [(ngModel)]="myMessage.from_name" placeholder="Please enter your name!">
+                </mat-form-field>
+
+                <mat-form-field class="width-300">
+                    <mat-label>Subject</mat-label>
+                    <input type="text" matInput name="subject" [(ngModel)]="myMessage.subject" placeholder="Please enter a subject!">
+                </mat-form-field>
+
+                <mat-form-field class="width-300">
+                    <mat-label>Email Address</mat-label>
+                    <input type="email" matInput name="email" [(ngModel)]="myMessage.from_email" placeholder="Please enter your email address!">
+                </mat-form-field>
+            </form>
+        </div>
+        <div class="right flex center-start">
+            <form #messageForm="ngForm" class="example-form flex column">
+                <mat-form-field class="messageBox">
+                  <mat-label>enter message</mat-label>
+                  <textarea matInput name="message" [(ngModel)]="myMessage.message" placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+                <div class="button flex center-end"><button mat-button class="btn" (click)="sendMessage()">Send</button></div>
+                
+              </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

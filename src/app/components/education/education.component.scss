@@ -1,0 +1,32 @@
+.example-input-wrapper {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    margin-right: 4px;
+  }
+  .margin-top{
+    margin-top: 100px;
+  }
+  .example-card {
+    max-width: 100%;
+  }
+  .margin-bottom{
+    margin-bottom: 100px;
+  }
+  mat-card:hover{
+    border: 3px solid gray;
+}
+.gradient-text {
+  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); /* Define your gradient colors */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  color: transparent; /* Make the text transparent */
+}
+mat-card{
+  p{
+    color: #514f77;
+  }
+}
+.height-20{
+  height: 20px;
+}

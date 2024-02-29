@@ -1,0 +1,27 @@
+<div class="toolbar full-width flex center-center">
+    <div class="inner-tool width-80 flex spacebetween-center">
+        <div class="flex gap-1em">
+            <img class="profile" src="../../../assets/WhatsApp Image 2023-11-15 at 09.32.56_bea95273.jpg"
+                alt="myprofile">
+            <h2 class="margin-0" routerLink="/home">Meet Me</h2>
+        </div>
+        <div class="flex gap-2em">
+            <h4 routerLink="/home">Home</h4>
+            <h4 routerLink="/about">About</h4>
+            <h4>
+                <div class="dropdown-container" (mouseenter)="showDropdown()" (mouseleave)="hideDropdown()">
+                    <div class="dropdown-trigger">Educationa background</div>
+                    <div class="dropdown-menu" *ngIf="isDropdownVisible">
+                        <h3 class=" margin-0 height-40"></h3>
+                        <h5 class="flex center-center margin-0 height-40" routerLink="/education">education</h5>
+                        <h5 class="flex center-center margin-0 height-40" routerLink="/expriences">Hire Me</h5>
+                    </div>
+                </div>
+            </h4>
+            <h4 routerLink="/portfolio">Projects</h4>
+            <h4 routerLink="/contact">Contact</h4>
+
+        </div>
+    </div>
+
+</div>

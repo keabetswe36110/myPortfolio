@@ -1,0 +1,61 @@
+<app-toolbar></app-toolbar>
+<div class="main-container full-width flex center-center">
+    <div class="inner-div width-80 flex spacebetween-center">
+        <div class="left width-46 flex center-start column">
+            <h1 class="gradient-text"><b>About My self</b></h1>
+            <P>A web developer with a proven ability to adapt in both self-starting and collaborative environments while staying focused on achieving high-quality results under strict deadlines.
+                Eager to obtain a challenging position at any IT company that will expand my learning and build upon my developer skills.</P>
+            <div class="flex gap-2em">
+                <div class="card flex center-center column gap-05em">
+                    <mat-icon class="icon-font">collections_bookmark</mat-icon>
+                    <h4>150</h4>
+                    <h4>total donations</h4>
+                </div>
+                <div class="card flex center-center column gap-05em">
+                    <mat-icon class="icon-font">account_box</mat-icon>
+                    <h4>12</h4>
+                    <h4>total projects</h4>
+                </div>
+                <div class="card flex center-center column gap-05em">
+                    <mat-icon class="icon-font">assignment</mat-icon>
+                    <h4>130</h4>
+                    <h4>total volunterings</h4>
+                </div>
+            </div>
+        </div>
+        <div class="right width-46 flex center-center column">
+            <h1 class="gradient-text">My skills</h1>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">html5 {{htmlProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="htmlProgress" [@progressAnimation]='htmlProgress'></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">CSS {{cssProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="cssProgress" [@progressAnimation]='cssProgress'></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">javascript {{javascriptProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="javascriptProgress" [@progressAnimation]='javascriptProgress'></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">Angular {{angularProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="angularProgress" [@progressAnimation]='angularProgress'></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">MongoDB {{mongoDBProgress}}%</h5>
+                <mat-progress-bar  mode="determinate"  [value]="mongoDBProgress" [@progressAnimation]='mongoDBProgress'></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">node.js {{nodeJsProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="nodeJsProgress" [@progressAnimation]='nodeJsProgress'><h3>40%</h3></mat-progress-bar>
+            </div>
+            <div class="flex center-center full-width height-50">
+                <h5 class="width-100">express {{expressProgress}}%</h5>
+                <mat-progress-bar  mode="determinate" [value]="expressProgress" [@progressAnimation]='expressProgress'><h3>40%</h3></mat-progress-bar>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>
