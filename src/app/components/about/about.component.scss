@@ -77,3 +77,53 @@ p{
     height: 100%;
     background-color: #4caf50;
   }
+
+//   responsive
+/* Example of media query for small screens */
+@media screen and (max-width: 350px){
+    /* Apply styles for small screens */
+    .inner-div{
+
+        font-size: xx-small;
+    }
+    .card{
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 350px) and (max-width: 630px){
+    /* Apply styles for small screens */
+    .inner-div{
+
+        font-size: x-small;
+    }
+    .card{
+        display: none;
+    }
+  }
+@media screen and (min-width: 630px) and (max-width: 940px) {
+    /* Apply styles for small screens */
+    .inner-div{
+
+        font-size: small;
+    }
+    .card{
+        width: 100px;
+        height: 150px;
+        text-align: center;
+    }
+    // .cards{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+ 
+  }
+  
+  /* Example of media query for medium screens */
+  @media screen and (min-width: 940px) and (max-width: 1023px) {
+    .inner-div{
+
+        font-size: medium;
+    }
+    /* Apply styles for medium screens */
+  }

@@ -10,7 +10,7 @@ export class ApiService {
   }
 
   post(data:any): void {
-    this.http.post('http://localhost:3000/add-supplier',{data
+    this.http.post('http://localhost:3000/upload-file',{data
   }).subscribe({
     next: (res: any) => console.log('success'),
     error: (err: any) => console.log('Error', err),

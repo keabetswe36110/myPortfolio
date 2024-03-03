@@ -36,9 +36,9 @@
 mat-icon{
     color: #766dff;
 }
-.font-color{
-    color: #777777;
-}
+// .font-color{
+//     color: #777777;
+// }
 p{
     color: #777777;
 }
@@ -46,45 +46,33 @@ p{
     height: 20px;
 }
 // =====================animations============================
-@keyframes slide-left{
-    from {
-        transform: translateX(1000px);
-        color: red
-    }
-    to{
-        transform: translateX(0);
-    }
+// @keyframes slide-left{
+//     0%{
+//         rotate: (540deg);
+//         transform: translateX(1000px);
+//         color: red
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
     
-}
-.animate{
-    animation: slide-left 1.5s ease-in ;
-}
+// }
+// .animate{
+//     animation: slide-left 3s ease-in ;
+// }
 @keyframes slide-right{
-    from {
-        transform: translateX(-1000px);
-        color: rgb(0, 17, 255)
+    0% {
+        rotate: (180deg);
+        transform: translateX(-1000px); 
+        color: rgb(229, 255, 0)
     }
-    to{
+    100%{
         transform: translateX(0);
     }
     
 }
 .animated{
-    animation: slide-right 1.5s ease-in ;
-}
-
-@keyframes rotate{
-    from {
-        transform: rotate(0);
-        color: rgb(0, 17, 255)
-    }
-    to{
-        transform: rotate(180deg);
-    }
-    
-}
-.rotate{
-    animation: rotate 1s linear 0s 1.95;
+    animation: slide-right 2s ease-in ;
 }
 
 .height-50{
@@ -111,3 +99,40 @@ marquee{
 .text-color-dark{
     color: #766dff;
 }
+
+
+// responsive 
+
+/* Example of media query for small screens */
+@media screen and (max-width: 350px){
+    /* Apply styles for small screens */
+    .content{
+
+        font-size: xx-small;
+    }
+  }
+
+@media screen and (min-width: 350px) and (max-width: 630px){
+    /* Apply styles for small screens */
+    .content{
+
+        font-size: x-small;
+    }
+  }
+@media screen and (min-width: 630px) and (max-width: 940px) {
+    /* Apply styles for small screens */
+    .content{
+
+        font-size: small;
+    }
+  }
+  
+  /* Example of media query for medium screens */
+  @media screen and (min-width: 940px) and (max-width: 1023px) {
+    .content{
+
+        font-size: medium;
+    }
+    /* Apply styles for medium screens */
+  }
+  

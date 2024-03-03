@@ -2,7 +2,7 @@
 <div class="flex center-center column">
     <div class="maps margin-top" id="map">
     </div>
-    <div class="flex spacebetween-center gap-2em margin-top margin-bottom">
+    <div class="below-map flex spacebetween-center gap-2em margin-top margin-bottom">
         <div class="left flex center-start column margin-bottom-50">
             <div class="flex center-center gap-1em"><mat-icon>phone</mat-icon>
                 <p>069 364 3640</p>
@@ -16,7 +16,7 @@
         </div>
         <div class="center">
             <form class="example-form  flex column" #messageForm="ngForm">
-                <mat-form-field class="width-360 margin-top">
+                <mat-form-field class="width-300 margin-top">
                     <mat-label>Full Name</mat-label>
                     <input type="text" matInput name="name" [(ngModel)]="myMessage.from_name" placeholder="Please enter your name!">
                 </mat-form-field>

@@ -30,3 +30,38 @@ mat-card{
 .height-20{
   height: 20px;
 }
+
+// responsive 
+
+/* Example of media query for small screens */
+@media screen and (max-width: 350px){
+  /* Apply styles for small screens */
+  .education{
+
+      font-size: xx-small;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 630px){
+  /* Apply styles for small screens */
+  .education{
+
+      font-size: x-small;
+  }
+}
+@media screen and (min-width: 630px) and (max-width: 940px) {
+  /* Apply styles for small screens */
+  .education{
+
+      font-size: small;
+  }
+}
+
+/* Example of media query for medium screens */
+@media screen and (min-width: 940px) and (max-width: 1023px) {
+  .education{
+
+      font-size: medium;
+  }
+  /* Apply styles for medium screens */
+}

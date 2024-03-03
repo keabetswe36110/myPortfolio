@@ -49,7 +49,7 @@ export class ContactComponent implements OnInit{
     from_email: this.myMessage.from_email,
     subject: this.myMessage.subject,
     message: this.myMessage.message,
-    reply_to: "john@123",
+    reply_to: "",
     });
     this.snackbar.open("message sent successfully",'OK' ,{duration:1000})
   }

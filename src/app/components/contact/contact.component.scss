@@ -1,30 +1,36 @@
-.maps{
+.maps {
     height: 400px;
     width: 80%;
 }
-.width-360{
+
+.width-360 {
     width: 360px !important;
 }
-.margin-top{
+
+.margin-top {
     margin-top: 30px;
 }
-.btn{
+
+.btn {
     background-color: #766dff;
     width: 150px;
     height: 30px;
     color: aliceblue !important;
 }
-.messageBox{
+
+.messageBox {
     height: 175px;
     width: 390px;
     border: none !important;
 }
-button:hover{
+
+button:hover {
     background-color: aliceblue;
     color: #766dff !important;
     border: gray 1px solid;
 }
-textarea{
+
+textarea {
     height: 175px !important;
     border: none !important;
 }
@@ -34,12 +40,85 @@ textarea{
     overflow-y: auto;
     border-bottom-width: 0px !important;
 }
-.margin-bottom{
+
+.margin-bottom {
     margin-bottom: 60px;
 }
-mat-icon{
+
+mat-icon {
     color: #766dff;
 }
-.margin-bottom-50{
+
+.margin-bottom-50 {
     margin-bottom: 50px;
+}
+
+// responsive 
+
+/* Example of media query for small screens */
+@media screen and (max-width: 350px) {
+
+    /* Apply styles for small screens */
+    .below-map {
+        display: flex;
+        flex-direction: column;
+        font-size: xx-small;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 630px) {
+
+    /* Apply styles for small screens */
+    .below-map {
+        display: flex;
+        flex-direction: column;
+    }
+    .messageBox {
+        width: 220px !important;
+    }
+}
+
+@media screen and (min-width: 630px) and (max-width: 940px) {
+
+    /* Apply styles for small screens */
+    .below-map {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+
+    .center {
+        width: 550px !important;
+
+
+    }
+
+    .messageBox {
+        width: 550px !important;
+    }
+}
+
+/* Example of media query for medium screens */
+@media screen and (min-width: 940px) and (max-width: 1023px) {
+    .below-map {
+
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+
+    .center {
+        width: 760px !important;
+
+    }
+
+    .messageBox {
+        width: 760px !important;
+    }
+
+
+
+
+
+    /* Apply styles for medium screens */
 }

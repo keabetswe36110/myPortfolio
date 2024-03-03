@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
+  
+
   isDropdownVisible: boolean = false;
 
   showDropdown() {
@@ -15,5 +17,23 @@ export class ToolbarComponent {
   hideDropdown() {
     this.isDropdownVisible = false;
   }
+
+  isSmallScreen!: boolean;
+  isMediumScreen!: boolean;
+  isLargeScreen!: boolean;
+
+  ngOnInit() {
+    this.checkScreenSize();
+    window.addEventListener('resize', () => {
+      this.checkScreenSize();
+    });
+  }
+
+  checkScreenSize() {
+    this.isSmallScreen = window.innerWidth < 768;
+    this.isMediumScreen = window.innerWidth >= 768 && window.innerWidth < 1024;
+    this.isLargeScreen = window.innerWidth >= 1024;
+  }
+
 
 }
